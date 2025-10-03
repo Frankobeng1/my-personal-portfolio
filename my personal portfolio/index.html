@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <div class="avatar">FOA</div>
+            <div>
+                <h1 id="myName">Frank Obeng Abu</h1>
+                <p class="sub">Frontend Developer • Designer • 3D Enthusiast</p>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact" id="contactLink">Contact</a>
+            <!-- Download CV -->
+            <a href="cv/cv.pdf" download class="btn btn-primary">Download CV</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="intro">
+                <h2>Hi, I'm <span class="accent">Frank</span></h2>
+                <p>I build polished, accessible web experiences with subtle 3D motion and micro-interactions. Below are samples of my work — images, videos and small projects.</p>
+
+                <div class="actions">
+                    <a href="#projects" class="btn">See my work</a>
+                    <button class="btn" id="download-sample-cv">Download sample CV</button>
+                </div>
+
+                <ul class="skills">
+                    <li>HTML &nbsp;/&nbsp; CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>3D & Motion</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+
+            <div class="visual">
+                <!-- CSS 3D cube -->
+                <div class="scene" aria-hidden>
+                    <div class="cube">
+                        <div class="face face-front">Front</div>
+                        <div class="face face-back">Back</div>
+                        <div class="face face-right">Right</div>
+                        <div class="face face-left">Left</div>
+                        <div class="face face-top">Top</div>
+                        <div class="face face-bottom">Bottom</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h3>Selected Projects & Media</h3>
+            <p class="muted">Here are some of my works images and videos.</p>
+
+            <!-- Gallery -->
+            <div id="gallery" class="gallery">
+                <img src="images/image1.png" alt="Project 1" class="gallery-item" height="150" width="200">
+                <img src="images/image2.png" alt="Project 2" class="gallery-item" height="150" width="200">
+
+
+                <video controls class="gallery-item">
+                    <source src="videos/video1.mp4" type="video/mp4">
+                
+                </video>
+
+                <video controls class="gallery-item">
+                    <source src="videos/video2.mp4" type="video/webm">
+                </video>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h3>About Me</h3>
+            <p>I enjoy turning ideas into products. When I’m not coding I sketch UI concepts and create small 3D scenes. I focus on performance and accessibility.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h3>Contact: 0558627995/0509618966
+            </h3>
+            <p>Email: <a href="mailto:frankobeng2222@gmail.com">frankobeng2222@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <small>© <span id="year"></span> Frank Obeng Abu — Built with ❤️</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
